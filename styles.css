@@ -1,0 +1,145 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #202020;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #FFFDFA;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 15px;
+    gap: 10px;
+}
+
+.menu input {
+    background-color: transparent;
+    width: 61px;
+    height: 49px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+}
+
+.menu input::-webkit-color-swatch {
+    border: 5px solid #E5E5E5;
+}
+
+.menu input::-moz-color-swatch {
+    border: 5px solid #E5E5E5;
+}
+
+.menu select {
+    position: relative;
+    appearance:none;
+    background: url('/images/angle-down-solid.svg') 96% no-repeat;
+    background-size: 1rem;
+    font-size: 1rem;
+    color: #111827;
+    flex-basis: 60%;
+    max-width: 312px;
+    padding: 0px 13px;
+    height: 2.625rem;
+    border: 2px solid #D1D5DB;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu select:hover {
+    border: 2px solid #6f6f6f;
+}
+
+
+.menu button {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0px 11px;
+    background-color: transparent;
+    border: 2px solid #D1D5DB;
+    border-radius: 4px;
+    color: #374151;
+    height: 2.625rem;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.menu button:hover, .menu button:focus {
+    border: 2px solid #6f6f6f;
+}
+
+.scheme {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.color {
+    flex-grow: 1 ;
+    cursor: pointer;
+    height: 88%;
+}
+
+.hex-value {
+    /* text-align: center; */
+    color: #2B283A;
+    padding: 11px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+}
+
+@media (max-width: 530px){
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 25px 15px;
+        flex-wrap: wrap;
+    }
+
+    .hex-value { 
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 700px){
+    .hex-value {
+        padding: 11px 3px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-height: 800px){
+    main {
+        height: 100%;
+    }
+}
