@@ -1,5 +1,3 @@
-// TODO: Copy value to clipboard
-
 const colorPickerInput = document.getElementById('color-picker-input')
 const selectModeInput = document.getElementById('select-mode-input')
 const getColorBtn = document.getElementById('get-color-btn')
