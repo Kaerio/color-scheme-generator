@@ -47,6 +47,16 @@ main {
     border: 5px solid #E5E5E5;
 }
 
+.menu input:hover::-webkit-color-swatch{
+    border: 5px solid #6f6f6f;
+}
+
+.menu input:hover::-moz-color-swatch{
+    border: 5px solid #6f6f6f;
+}
+
+
+
 .menu select {
     position: relative;
     appearance:none;
